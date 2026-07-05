@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "agentic-support-hiero",
+  "displayName": "Open Elements Hiero Support",
+  "version": "0.1.0",
+  "description": "Claude Code plugin focused on Hiero and Hedera: background-knowledge skills for the Hiero project and the Hedera network, a skill for deploying local test networks with the solo CLI, and the Hedera documentation MCP server.",
+  "author": {
+    "name": "Open Elements",
+    "url": "https://open-elements.com"
+  },
+  "homepage": "https://github.com/OpenElementsLabs/agentic-support-hiero",
+  "repository": "https://github.com/OpenElementsLabs/agentic-support-hiero",
+  "license": "Apache-2.0",
+  "keywords": [
+    "open-elements",
+    "hiero",
+    "hedera",
+    "hbar",
+    "solo",
+    "distributed-ledger",
+    "blockchain"
+  ]
+}
