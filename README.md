@@ -7,7 +7,10 @@ A Claude Code **plugin** that focuses on [Hiero](https://hiero.org) and [Hedera]
 - **`skills/hedera-info`** — background knowledge about the Hedera public network: HBAR, network services (HTS, HCS, smart contracts, file service), the Hedera Council, and the surrounding ecosystem.
 - **`skills/hiero-info`** — background knowledge about the Hiero open-source DLT project under LF Decentralized Trust: hashgraph consensus, architecture, SDKs, tooling, and governance.
 - **`skills/hiero-solo`** — deploy and manage local or multi-node Hiero/Hedera test networks with the `solo` CLI (one-shot and manual workflows).
-- **`.mcp.json`** — the Hedera documentation MCP server (`https://docs.hedera.com/mcp`) for searching and retrieving official docs.
+- **`skills/hedera-mcp`** — how to use the Hedera hosted MCP server: authentication, the `RETURN_BYTES` signing model, tool categories, and a typical Testnet workflow.
+- **`.mcp.json`** — two MCP servers:
+  - **`hedera-docs`** (`https://docs.hedera.com/mcp`) — search and retrieve official Hedera documentation.
+  - **`hedera-testnet`** (`https://agentic-testnet-mcp.hedera.com/mcp`) — the Hedera hosted MCP server for building Testnet transactions and running read-only queries. It never signs or executes: transaction-building tools return unsigned hex-encoded bytes for you to sign locally. Set `HEDERA_ACCOUNT_ID` to your Testnet account ID (sent as the `x-hedera-account-id` header); see the `hedera-mcp` skill for details.
 
 ## Installation
 
@@ -38,7 +41,7 @@ agentic-support-hiero/
 │   ├── plugin.json          # plugin manifest
 │   └── marketplace.json     # marketplace catalog (this repo is its own marketplace)
 ├── skills/                  # all skills, flat (Claude Code discovers them here)
-├── .mcp.json                # Hedera documentation MCP server
+├── .mcp.json                # Hedera MCP servers (docs + hosted Testnet)
 └── CHANGELOG.md
 ```
 

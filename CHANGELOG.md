@@ -5,6 +5,18 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-07-10
+
+### Added
+
+- `hedera-testnet` MCP server in `.mcp.json` — the Hedera hosted MCP server
+  (`https://agentic-testnet-mcp.hedera.com/mcp`) for building Hedera Testnet transactions
+  and running read-only queries. Authenticated with the `x-hedera-account-id` header
+  (via the `HEDERA_ACCOUNT_ID` environment variable); operates in `RETURN_BYTES` mode so
+  signing stays client-side.
+- `hedera-mcp` skill — documents how to use the hosted MCP server: authentication, the
+  `RETURN_BYTES` signing model, tool categories, and a typical Testnet workflow.
+
 ## [0.1.0] - 2026-07-05
 
 ### Added

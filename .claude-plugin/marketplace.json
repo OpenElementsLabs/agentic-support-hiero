@@ -9,8 +9,8 @@
     {
       "name": "agentic-support-hiero",
       "source": "./",
-      "description": "Claude Code plugin focused on Hiero and Hedera: background-knowledge skills for the Hiero project and the Hedera network, a skill for deploying local test networks with the solo CLI, and the Hedera documentation MCP server.",
-      "version": "0.1.0",
+      "description": "Claude Code plugin focused on Hiero and Hedera: background-knowledge skills for the Hiero project and the Hedera network, a skill for deploying local test networks with the solo CLI, and the Hedera documentation and hosted Testnet MCP servers.",
+      "version": "0.2.0",
       "author": {
         "name": "Open Elements"
       },
