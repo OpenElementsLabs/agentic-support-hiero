@@ -1,18 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "agentic-support-hiero",
-  "displayName": "Open Elements Hiero Support",
+  "displayName": "Hiero & Hedera Support",
   "version": "0.2.0",
   "description": "Claude Code plugin focused on Hiero and Hedera: background-knowledge skills for the Hiero project and the Hedera network, a skill for deploying local test networks with the solo CLI, and the Hedera documentation and hosted Testnet MCP servers.",
   "author": {
-    "name": "Open Elements",
-    "url": "https://open-elements.com"
+    "name": "Hiero Hackers",
+    "url": "https://github.com/hiero-hackers"
   },
-  "homepage": "https://github.com/OpenElementsLabs/agentic-support-hiero",
-  "repository": "https://github.com/OpenElementsLabs/agentic-support-hiero",
+  "homepage": "https://github.com/hiero-hackers/agentic-support-hiero",
+  "repository": "https://github.com/hiero-hackers/agentic-support-hiero",
   "license": "Apache-2.0",
   "keywords": [
-    "open-elements",
     "hiero",
     "hedera",
     "hbar",

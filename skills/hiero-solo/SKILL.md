@@ -2,8 +2,8 @@
 name: hiero-solo
 license: Apache-2.0
 metadata:
-  source: https://github.com/OpenElementsLabs/agentic-support-hiero
-  author: Open Elements
+  source: https://github.com/hiero-hackers/agentic-support-hiero
+  author: Hiero Hackers
 description: Deploy and manage local or multi-node Hiero/Hedera test networks with the solo CLI. Use when the user wants to spin up a local Hiero network to develop or test an app, run a Hedera/Hiero SDK against a throwaway network, set up consensus nodes, mirror node, JSON-RPC relay, or explorer, or deploy larger multi-node test networks. Also use when the user mentions solo, `solo one-shot`, hiero-solo-action, or replacing hiero-local-node.
 ---
 
@@ -143,7 +143,7 @@ Tear down in reverse order (`relay node destroy` → `explorer node destroy` →
 
 ## CI/CD
 
-For automated pipelines, use the `hiero-solo-action` GitHub Action (donated to Hiero by Open Elements) instead of scripting the CLI by hand. Repo examples under `hiero-ledger/solo/examples` (e.g. `one-shot-falcon`, `one-shot-local-build`, `hardhat-with-solo`) are driven by `Taskfile`s (`task deploy` / `task test` / `task destroy`) and are good starting points.
+For automated pipelines, use the `hiero-solo-action` GitHub Action instead of scripting the CLI by hand. Repo examples under `hiero-ledger/solo/examples` (e.g. `one-shot-falcon`, `one-shot-local-build`, `hardhat-with-solo`) are driven by `Taskfile`s (`task deploy` / `task test` / `task destroy`) and are good starting points.
 
 ## References
 

@@ -17,8 +17,8 @@ A Claude Code **plugin** that focuses on [Hiero](https://hiero.org) and [Hedera]
 Install from inside Claude Code:
 
 ```
-/plugin marketplace add OpenElementsLabs/agentic-support-hiero
-/plugin install agentic-support-hiero@open-elements-hiero
+/plugin marketplace add hiero-hackers/agentic-support-hiero
+/plugin install agentic-support-hiero@hiero-hackers
 ```
 
 Then restart Claude Code (or run `/reload-plugins`).
@@ -30,7 +30,7 @@ Skills are **namespaced** under the plugin, e.g. `/agentic-support-hiero:hiero-s
 Because the plugin is versioned, updates arrive when the `version` in `plugin.json` is bumped. Pull the latest release with:
 
 ```
-/plugin marketplace update open-elements-hiero
+/plugin marketplace update hiero-hackers
 ```
 
 ## Repository layout

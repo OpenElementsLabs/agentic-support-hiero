@@ -2,8 +2,8 @@
 name: hedera-info
 license: Apache-2.0
 metadata:
-  source: https://github.com/OpenElementsLabs/agentic-support-hiero
-  author: Open Elements
+  source: https://github.com/hiero-hackers/agentic-support-hiero
+  author: Hiero Hackers
 description: Background information about the Hedera network — the public distributed ledger built on Hiero, governed by a council of global organizations. Covers the Hedera Mainnet, Testnet, HBAR cryptocurrency, Hedera Council, and the ecosystem organizations (Hashgraph, Hashgraph Association, HBAR Foundation). Use when generating content about Hedera as a product/network, its use cases, governance, HBAR token, or the organizations around it. Also use when the user mentions Hedera Mainnet, HBAR, HashScan, or Hedera Council.
 ---
 
@@ -163,7 +163,7 @@ Hashgraph (formerly Swirlds Labs) is the primary software company providing tech
 - **CEO:** Eric Piscini
 - **Co-founder of Hedera:** Mance Harmon
 - **Inventor of hashgraph:** Dr. Leemon Baird (Co-founder & Chief Scientist)
-- **Director of Open Source:** Hendrik Ebbers (founder of Open Elements, Hiero TSC Chair)
+- **Director of Open Source:** Hendrik Ebbers (Hiero TSC Chair)
 
 **Products:**
 - **HashSphere** — Private network powered by Hedera/Hiero technology

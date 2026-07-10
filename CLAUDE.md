@@ -29,8 +29,8 @@ The repository root is the plugin root (and the marketplace root).
 The plugin is installed from inside Claude Code:
 
 ```
-/plugin marketplace add OpenElementsLabs/agentic-support-hiero
-/plugin install agentic-support-hiero@open-elements-hiero
+/plugin marketplace add hiero-hackers/agentic-support-hiero
+/plugin install agentic-support-hiero@hiero-hackers
 ```
 
 Skills are namespaced under the plugin, e.g. `/agentic-support-hiero:hiero-solo`.

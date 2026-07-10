@@ -2,8 +2,8 @@
 name: hedera-mcp
 license: Apache-2.0
 metadata:
-  source: https://github.com/OpenElementsLabs/agentic-support-hiero
-  author: Open Elements
+  source: https://github.com/hiero-hackers/agentic-support-hiero
+  author: Hiero Hackers
 description: How to use the Hedera hosted MCP server — the official agentic MCP endpoint that builds unsigned Hedera Testnet transactions (accounts, HTS tokens, HCS topics, smart contracts) and runs read-only queries. Use when the user wants to interact with the Hedera Testnet through MCP, build or submit Hedera transactions, or asks how to configure/authenticate the Hedera MCP server. This plugin ships the server as `hedera-testnet` in `.mcp.json`.
 ---
 
