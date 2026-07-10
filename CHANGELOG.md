@@ -17,6 +17,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `hedera-mcp` skill — documents how to use the hosted MCP server: authentication, the
   `RETURN_BYTES` signing model, tool categories, and a typical Testnet workflow.
 
+### Changed
+
+- Moved the repository to the `hiero-hackers` GitHub organization and rebranded the plugin
+  and marketplace away from Open Elements. Owner/author is now "Hiero Hackers" and all
+  homepage/repository URLs point to `https://github.com/hiero-hackers/agentic-support-hiero`.
+- **Breaking:** renamed the marketplace from `open-elements-hiero` to `hiero-hackers`.
+  Anyone who added the old marketplace must re-add it and reinstall:
+
+  ```
+  /plugin marketplace add hiero-hackers/agentic-support-hiero
+  /plugin install agentic-support-hiero@hiero-hackers
+  ```
+
 ## [0.1.0] - 2026-07-05
 
 ### Added
