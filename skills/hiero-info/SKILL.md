@@ -2,8 +2,8 @@
 name: hiero-info
 license: Apache-2.0
 metadata:
-  source: https://github.com/OpenElementsLabs/agentic-support-hiero
-  author: Open Elements
+  source: https://github.com/hiero-hackers/agentic-support-hiero
+  author: Hiero Hackers
 description: Background information about the Hiero project — an open-source distributed ledger technology (DLT) under Linux Foundation Decentralized Trust (LFDT). Use when generating content that references Hiero, Hedera, hashgraph consensus, DLT/blockchain technology, or when working on code within the Hiero ecosystem. Also use when the user mentions LFDT, distributed ledger, or decentralized trust.
 ---
 
@@ -105,7 +105,7 @@ The TSC is the primary governance body, responsible for technical decisions, HIP
 
 | Name | Organisation / Role |
 |------|---------------------|
-| Hendrik Ebbers (Chair) | Open Elements / Hashgraph — Director of Open Source |
+| Hendrik Ebbers (Chair) | Hashgraph — Director of Open Source |
 | Richard Bair | Hashgraph — VP Engineering |
 | Dr. Leemon Baird (permanent) | Hashgraph — Co-founder & Chief Scientist, inventor of the hashgraph algorithm |
 | Stoyan Panayotov | LimeChain — Software Architect |
@@ -152,23 +152,13 @@ All meetings are public and accessible via the LFX Calendar.
 
 ### Ecosystem Partners
 
-HashPack (leading wallet), Hgraph (infrastructure provider), HBAR Foundry (developer community), SentX.io, ioBuilders, Calaxy, Diamond Standard, Hedera
+HashPack (leading wallet), Hgraph (infrastructure provider), HBAR Foundry (developer community), Open Elements, SentX.io, ioBuilders, Calaxy, Diamond Standard, Hedera
 
 ### Community Communication
 
 - Discord: via lfdecentralizedtrust.org
 - GitHub Discussions: https://github.com/orgs/hiero-ledger/discussions
 - Mailing lists via groups.io
-
-## Open Elements' Role in Hiero
-
-Hendrik Ebbers, founder of Open Elements and Director of Open Source at Hashgraph, chairs the Hiero TSC. He is also Vice Chair of the LFDT Technical Advisory Board and a member of AAIF working groups at the Linux Foundation. See the `open-elements-info` skill for full details on Hendrik's roles.
-
-**Code contributions donated to Hiero:**
-- **hiero-enterprise-java** — Java APIs for integrating Hiero networks into enterprise frameworks like Spring Boot and MicroProfile. Developed by Open Elements and donated to the Hiero Ledger organization (March 2026).
-- **hiero-solo-action** — GitHub Action for setting up a Hiero network in CI/CD pipelines. Developed by Open Elements and donated to Hiero.
-
-Beyond these donated projects, several Open Elements team members are active committers or maintainers on other Hiero repositories.
 
 ## Key Links
 
