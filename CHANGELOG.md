@@ -5,6 +5,25 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-07-11
+
+### Added
+
+- `build-hiero-sdk` skill — an architecture guide for building a Hedera/Hiero-style SDK
+  in any language: the five-layer architecture (value types → crypto → execution spine →
+  network stack → service surface), the HAPI protobuf envelope model and its design
+  implications (frozen `bodyBytes` signing, per-node bodies, two-phase receipts, paid
+  queries), the `Executable` retry engine, and the setter/factory/test/release
+  conventions shared across the official SDKs. Ships with a set of reference
+  documents distilled from the JS, Python, Go, Rust, and C++ SDKs and the
+  consensus-node protobuf definitions: the protobuf envelope model, the execution
+  layer, shared conventions, language-adaptation patterns (Go/Rust/C++ idiom
+  translation), the mirror-node layer (topic streams, REST, address-book bootstrap),
+  exact cryptographic constants (DER prefixes, keccak/compact-signature rules, HD
+  derivation paths), a milestone walkthrough from empty repo to first confirmed
+  transfer, and local-network test wiring (solo ports/env contract, CI, TCK loop —
+  complementing the existing `hiero-solo` deployment skill).
+
 ## [0.2.0] - 2026-07-10
 
 ### Added
