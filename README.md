@@ -8,6 +8,7 @@ A Claude Code **plugin** that focuses on [Hiero](https://hiero.org) and [Hedera]
 - **`skills/hiero-info`** — background knowledge about the Hiero open-source DLT project under LF Decentralized Trust: hashgraph consensus, architecture, SDKs, tooling, and governance.
 - **`skills/hiero-solo`** — deploy and manage local or multi-node Hiero/Hedera test networks with the `solo` CLI (one-shot and manual workflows).
 - **`skills/hedera-mcp`** — how to use the Hedera hosted MCP server: authentication, the `RETURN_BYTES` signing model, tool categories, and a typical Testnet workflow.
+- **`skills/build-hiero-sdk`** — how to architect and build a Hedera/Hiero-style SDK in any language: the five-layer architecture, the HAPI protobuf envelope model, transaction/query lifecycles, retry and error semantics, and the coding/test conventions shared by the official SDKs. Distilled from the JS, Python, and Go SDKs and the HAPI protobuf definitions.
 - **`.mcp.json`** — two MCP servers:
   - **`hedera-docs`** (`https://docs.hedera.com/mcp`) — search and retrieve official Hedera documentation.
   - **`hedera-testnet`** (`https://agentic-testnet-mcp.hedera.com/mcp`) — the Hedera hosted MCP server for building Testnet transactions and running read-only queries. It never signs or executes: transaction-building tools return unsigned hex-encoded bytes for you to sign locally. Set `HEDERA_ACCOUNT_ID` to your Testnet account ID (sent as the `x-hedera-account-id` header); see the `hedera-mcp` skill for details.
