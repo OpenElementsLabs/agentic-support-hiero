@@ -5,10 +5,24 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.0] - 2026-07-11
+## [0.3.0] - 2027-07-12
 
 ### Added
 
+- `hedera-mirror-queries` skill — how to query Hedera network data via the free
+  mirror node REST API or the typed `@hiero-enterprise/mirror` TypeScript package
+  (newly merged into hiero-enterprise-js): a route-choice guide (REST for one-off,
+  any-language lookups; the package for production TS services wanting retries, a
+  concurrency/rate gate, typed and runtime-validated responses, and callable
+  pagination), the full data map across accounts, balances, transactions, tokens,
+  NFTs, HCS topics, smart contracts, schedules, blocks, and network endpoints, the
+  core query patterns (entity ids, consensus-timestamp ranges, point-in-time
+  queries, `links.next` pagination, server-side filtering), and the unit/encoding
+  gotchas that cause most wrong answers (tinybars, base64 topic messages, hex
+  contract data, beyond-safe-integer fields, eventual consistency). Ships two
+  reference catalogs: the REST endpoint catalog with reality-vs-spec caveats
+  observed on mainnet, and the complete package API (config, all nine
+  repositories, `Page`/`paginate`, `MirrorError`).
 - `build-hiero-sdk` skill — an architecture guide for building a Hedera/Hiero-style SDK
   in any language: the five-layer architecture (value types → crypto → execution spine →
   network stack → service surface), the HAPI protobuf envelope model and its design

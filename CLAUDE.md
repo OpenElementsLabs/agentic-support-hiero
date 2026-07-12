@@ -23,6 +23,7 @@ The repository root is the plugin root (and the marketplace root).
 - `hiero-info` — background knowledge about the Hiero open-source DLT project under LF Decentralized Trust.
 - `hiero-solo` — deploy and manage local/multi-node Hiero/Hedera test networks with the `solo` CLI.
 - `hedera-mcp` — how to use the Hedera hosted MCP server (`hedera-testnet` in `.mcp.json`): auth, the `RETURN_BYTES` signing model, and Testnet workflow.
+- `hedera-mirror-queries` — how to query Hedera data via the mirror node REST API or the `@hiero-enterprise/mirror` TypeScript package: data map, pagination/timestamp patterns, unit gotchas.
 
 ## Distribution
 
