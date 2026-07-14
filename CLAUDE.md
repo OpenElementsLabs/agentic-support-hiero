@@ -23,6 +23,7 @@ The repository root is the plugin root (and the marketplace root).
 - `hiero-info` — background knowledge about the Hiero open-source DLT project under LF Decentralized Trust.
 - `hiero-solo` — deploy and manage local/multi-node Hiero/Hedera test networks with the `solo` CLI.
 - `hedera-mcp` — how to use the Hedera hosted MCP server (`hedera-testnet` in `.mcp.json`): auth, the `RETURN_BYTES` signing model, and Testnet workflow.
+- `hedera-mirror-queries` — how to query Hedera data via the mirror node REST API or the `@hiero-enterprise/mirror` TypeScript package: data map, pagination/timestamp patterns, unit gotchas.
 
 ## Distribution
 
@@ -35,7 +36,14 @@ The plugin is installed from inside Claude Code:
 
 Skills are namespaced under the plugin, e.g. `/agentic-support-hiero:hiero-solo`.
 
-**Releasing:** bump `version` in **both** `.claude-plugin/plugin.json` and the `agentic-support-hiero` entry in `.claude-plugin/marketplace.json`, update `CHANGELOG.md`, tag the release, and validate with `claude plugin validate ./ --strict`. Users only receive an update when the version is bumped.
+**Releasing:** refresh the vendored mirror-node OpenAPI spec —
+
+```
+curl -sSfL https://mainnet.mirrornode.hedera.com/api/v1/docs/openapi.yml \
+  -o skills/hedera-mirror-queries/references/openapi.yml
+```
+
+then bump `version` in **both** `.claude-plugin/plugin.json` and the `agentic-support-hiero` entry in `.claude-plugin/marketplace.json`, update `CHANGELOG.md`, tag the release, and validate with `claude plugin validate ./ --strict`. Users only receive an update when the version is bumped. (The spec is vendored deliberately — this repo ships no CI; re-fetch it here so the bundled copy tracks the upstream API. Its own version lives in the file's `info.version`.)
 
 A plugin-root `CLAUDE.md` is not loaded as context, so ship guidance as skills — not in this file.
 

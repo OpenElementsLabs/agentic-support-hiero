@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "agentic-support-hiero",
   "displayName": "Hiero & Hedera Support",
-  "version": "0.2.0",
-  "description": "Claude Code plugin focused on Hiero and Hedera: background-knowledge skills for the Hiero project and the Hedera network, a skill for deploying local test networks with the solo CLI, and the Hedera documentation and hosted Testnet MCP servers.",
+  "version": "0.3.0",
+  "description": "Claude Code plugin focused on Hiero and Hedera: background-knowledge skills for the Hiero project and the Hedera network, skills for deploying local test networks with the solo CLI, building Hiero-style SDKs, and querying Hedera data via the mirror node REST API or hiero-enterprise-js, plus the Hedera documentation and hosted Testnet MCP servers.",
   "author": {
     "name": "Hiero Hackers",
     "url": "https://github.com/hiero-hackers"
@@ -17,6 +17,7 @@
     "hbar",
     "solo",
     "distributed-ledger",
-    "blockchain"
+    "blockchain",
+    "mirror-node"
   ]
 }
