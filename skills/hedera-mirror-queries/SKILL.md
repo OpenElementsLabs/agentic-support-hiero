@@ -92,9 +92,15 @@ repository in the TS package:
 | Network: nodes, supply, fees, exchange rate, staking | `/network/**` | `networkRepository` |
 | Staking rewards paid to an account | `/accounts/{id}/rewards` | `accountRepository.findRewards` |
 
-For the full endpoint catalog with parameters and gotchas, read
-[references/rest-api.md](references/rest-api.md). For the complete
-package API (config, all repository methods, pagination, errors), read
+For the exact contract — every endpoint's parameters, response
+schemas, and enums — read the bundled OpenAPI spec
+[references/openapi.yml](references/openapi.yml) (Mirror Node REST API). It's the authoritative, machine-readable source; it's large,
+so grep it for the `operationId`, path, or schema name you need rather
+than reading it whole. [references/rest-api.md](references/rest-api.md)
+is the curated map of the same endpoints with the reality-vs-spec
+gotchas the raw spec omits — read it for orientation and the OpenAPI
+spec for precision. For the complete package API (config, all
+repository methods, pagination, errors), read
 [references/enterprise-js.md](references/enterprise-js.md).
 
 ## Quickstart — REST

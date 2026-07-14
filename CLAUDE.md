@@ -36,7 +36,14 @@ The plugin is installed from inside Claude Code:
 
 Skills are namespaced under the plugin, e.g. `/agentic-support-hiero:hiero-solo`.
 
-**Releasing:** bump `version` in **both** `.claude-plugin/plugin.json` and the `agentic-support-hiero` entry in `.claude-plugin/marketplace.json`, update `CHANGELOG.md`, tag the release, and validate with `claude plugin validate ./ --strict`. Users only receive an update when the version is bumped.
+**Releasing:** refresh the vendored mirror-node OpenAPI spec —
+
+```
+curl -sSfL https://mainnet.mirrornode.hedera.com/api/v1/docs/openapi.yml \
+  -o skills/hedera-mirror-queries/references/openapi.yml
+```
+
+then bump `version` in **both** `.claude-plugin/plugin.json` and the `agentic-support-hiero` entry in `.claude-plugin/marketplace.json`, update `CHANGELOG.md`, tag the release, and validate with `claude plugin validate ./ --strict`. Users only receive an update when the version is bumped. (The spec is vendored deliberately — this repo ships no CI; re-fetch it here so the bundled copy tracks the upstream API. Its own version lives in the file's `info.version`.)
 
 A plugin-root `CLAUDE.md` is not loaded as context, so ship guidance as skills — not in this file.
 

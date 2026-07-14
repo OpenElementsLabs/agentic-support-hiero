@@ -19,10 +19,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   core query patterns (entity ids, consensus-timestamp ranges, point-in-time
   queries, `links.next` pagination, server-side filtering), and the unit/encoding
   gotchas that cause most wrong answers (tinybars, base64 topic messages, hex
-  contract data, beyond-safe-integer fields, eventual consistency). Ships two
-  reference catalogs: the REST endpoint catalog with reality-vs-spec caveats
-  observed on mainnet, and the complete package API (config, all nine
-  repositories, `Page`/`paginate`, `MirrorError`).
+  contract data, beyond-safe-integer fields, eventual consistency). Ships the
+  upstream Mirror Node OpenAPI spec as the authoritative, machine-readable
+  contract, plus two curated reference catalogs: the REST
+  endpoint catalog with reality-vs-spec caveats observed on mainnet, and the
+  complete package API (config, all nine repositories, `Page`/`paginate`,
+  `MirrorError`).
 - `build-hiero-sdk` skill — an architecture guide for building a Hedera/Hiero-style SDK
   in any language: the five-layer architecture (value types → crypto → execution spine →
   network stack → service surface), the HAPI protobuf envelope model and its design

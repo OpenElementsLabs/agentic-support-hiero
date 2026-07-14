@@ -6,9 +6,13 @@ GET unless noted. Common params everywhere: `limit` (default 25, max
 `lt:` `lte:` `ne:` on id/timestamp filters. List responses carry
 `links.next` (follow verbatim; `null` = last page).
 
-The authoritative contract is the OpenAPI spec:
-`https://mainnet.mirrornode.hedera.com/api/v1/docs/` (interactive) —
-though reality occasionally drifts from it (see gotchas at the end).
+The authoritative contract is the OpenAPI spec, bundled alongside this
+file as [openapi.yml](openapi.yml) (Mirror Node REST API) — grep it
+for an `operationId`, path, or schema for exact parameters and
+response shapes. The live version is served at
+`https://testnet.mirrornode.hedera.com/api/v1/docs/openapi.yml`. This
+catalog is the curated map; where reality drifts from the spec, the
+gotchas at the end are the source of truth.
 
 ## Accounts & balances
 
